@@ -1,0 +1,6 @@
+wrkbk = openpyxl.load_workbook("output.xlsx")
+
+    sh = wrkbk.active
+    for row in sh.iter_rows(min_row=1, min_col=1, max_row=10, max_col=2):
+        for cell in row:
+            cell_value = cell.value

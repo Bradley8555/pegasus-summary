@@ -1,0 +1,9 @@
+{% block content %}
+
+<h1> Text </h1>
+<ul>
+{% for text in text_list %}
+    <li>{{ text.text }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
